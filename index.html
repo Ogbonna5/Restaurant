@@ -1,689 +1,389 @@
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Restaurant</title>
-        <!-- Start of Bootstrap link -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <!-- End of Bootstrap link -->
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eat & Chill — Food Menu</title>
+    <meta name="description" content="Eat & Chill restaurant menu: Nigerian, American, Canadian, Indian, Kenyan, Spanish and Mexican dishes. Order by phone or message." />
 
-           body {
-                color: rgb(218, 204, 204);
-            font-family: snap ITC;
-           } 
-           
-           .fs:hover {
-            font-size: 40px;
-           }
+    <!-- Open Graph for rich link previews -->
+    <meta property="og:title" content="Eat & Chill — Food Menu" />
+    <meta property="og:description" content="Nigerian, American, Canadian and more. Browse dishes, see prices in USD or NGN." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="American food 1.jpg" />
 
-           hr {
-            background-color: rgb(218, 204, 204);
-           }
-        </style>
-    </head>
-    <body class="bg-dark">
-        <header>
-            <!--Start Navbar-->
-             <hr>
-             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <h1><a class="navbar-brand" href="#" id="logo" style="font-size: 30px;"><b>Eat And chill</b></a></h1>
-                 <button class="navbar-toggler" type="button" data-toggle="collapse"             data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span></button>
- 
-                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                              Food Menu
-                            </a>
-                            <div class="dropdown-menu bg-dark">
-                              <a class="dropdown-item text-light" href="#Nigerian-Dishes">Fried Rice</a>
-                              <a class="dropdown-item text-light" href="#American-Dishes">Burger</a>
-                              <a class="dropdown-item text-light" href="#Canadian-Dishes">Grilles</a>
-                              <a class="dropdown-item text-light" href="#Nigerian-Dishes">Okpa</a>
-                              <a class="dropdown-item text-light" href="#American-Dishes">Sausage</a>
-                              <a class="dropdown-item text-light" href="#Canadian-Dishes">Fries</a>
-                              <a class="dropdown-item text-light" href="#Nigerian-Dishes">Pepper Soup</a>
-                              <a class="dropdown-item text-light" href="#American-Dishes">Pizza</a>
-                              <a class="dropdown-item text-light" href="#Canadian-Dishes">Garnished Pan-cakes</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item text-light" href="#Other-Delicacies">Other Delicacies</a>
-                              </div>
-                        </li>
-                        <li class="nav-item">
-                             <a class="nav-link" href="#Nigerian-Dishes" id="logo-link">Nigerian Dishes</a>
-                        </li>
- 
-                        <li class="nav-item">
-                             <a class="nav-link" href="#American-Dishes" id="logo-link">American Dishes</a>
-                        </li>
+    <style>
+      :root{
+        --bg: #0b0f14;
+        --panel: #121821;
+        --text: #e8eef6;
+        --muted: #a9b4c2;
+        --brand: #0ea5e9;
+        --accent: #22c55e;
+        --danger: #ef4444;
+        --radius: 16px;
+        --space: 16px;
+        --shadow: 0 10px 30px rgba(0,0,0,.35);
+      }
+      *{box-sizing:border-box}
+      html,body{margin:0;height:100%}
+      body{font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; background:linear-gradient(180deg,#0b0f14 0%, #0d131b 60%, #0b0f14 100%); color:var(--text);}
+      a{color:inherit; text-decoration:none}
+      img{max-width:100%; display:block; border-radius:12px}
 
-                        <li class="nav-item">
-                             <a class="nav-link" href="#Canadian-Dishes" id="logo-link">Canadian Dishes</a>
-                        </li>
-                     </ul>
- 
-                 </div>
- 
-             </nav><hr>
- 
-         <!--End Navbar-->
-        </header>
-        <main>
-            <section class="home"> 
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="pexels-nadim-shaikh-7758253.jpg" class="d-block w-100" height="550px" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Jollof Rice</h5>
-                      <p>This are some examples scroll down and see more.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="pexels-polina-tankilevitch-4109116 (1).jpg" class="d-block w-100" height="550px" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      
-                      <h5>Delicious Burger</h5>
-                      <p>This are some examples scroll down and see more.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Screenshot 2023-09-07 122419.png" class="d-block w-100" height="550px" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Garnished Jollof Rice</h5>
-                      <p>This are some examples scroll down and see more.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </button>
-              </div>
-            </section>
-            <section id="Nigerian-Dishes" class="jumbotron bg-dark">
-                <h3 style="text-align: center;">Nigerian Dishes</h3>
-                <div class="container">
-                  <div class="row">
-                      <div class="col-md-3" style=" padding-bottom: 2rem;">
-                          <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                              <div class="card-body">
-                                  <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Rice Delicacies</h5>
-                                </div>
-                              <img src="nigerian food 1.jpg" class="card-img-top" alt="" style="height: 190px;">
-                              <div class="card-body">
-                                <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                                  <ul>
-                                    <li style="list-style: none;">Price: $12.00 or 9600.00 Naira Respectively</li>
-                                  </ul>
-                                </p>
-                              </div>
-                              <div class="card-body">
-                                <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-3" style=" padding-bottom: 2rem;">
-                        <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                            <div class="card-body">
-                                <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Vegtable Soup with Eba</h5>
-                            </div>
-                            <img src="nigerian food 2.jpg" class="card-img-top" alt="" style="height: 180px;">
-                            <div class="card-body">
-                              <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                                <ul>
-                                  <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                                </ul>
-                              </p>
-                            </div>
-                            <div class="card-body">
-                              <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                            </div>
-                        </div>
-                    </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                      <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                          <div class="card-body">
-                              <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Vegtable Soup with Pounded Yam</h5>
-                            </div>
-                          <img src="nigerian food 3.jpg" class="card-img-top" alt="" style="height: 180px;">
-                          <div class="card-body">
-                            <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                              <ul>
-                                <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                              </ul>
-                            </p>
-                          </div>
-                          <div class="card-body">
-                            <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                          </div>
-                      </div>
-                  </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                    <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Okra Soup</h5>
-                          </div>
-                        <img src="nigerian food 4.jpg" class="card-img-top" alt="" style="height: 200px;">
-                        <div class="card-body">
-                          <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                            <ul>
-                              <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                            </ul>
-                          </p>
-                        </div>
-                        <div class="card-body">
-                          <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3" style=" padding-bottom: 2rem;">
-                      <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                          <div class="card-body">
-                              <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Garnished Supagetti</h5>
-                            </div>
-                          <img src="nigerian food 5.jpg" class="card-img-top" alt="" style="height: 180px;">
-                          <div class="card-body">
-                            <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                              <ul>
-                                <li style="list-style: none;">Price: $12.00 or 9600.00 Naira</li>
-                              </ul>
-                            </p>
-                          </div>
-                          <div class="card-body">
-                            <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-3" style=" padding-bottom: 2rem;">
-                    <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Pepper Soup</h5>
-                          </div>
-                        <img src="nigerian food 6.jpg" class="card-img-top" alt="" style="height: 200px;">
-                        <div class="card-body">
-                          <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                            <ul>
-                              <li style="list-style: none;">Price: $12.00 or 9600.00 Naira</li>
-                            </ul>
-                          </p>
-                        </div>
-                        <div class="card-body">
-                          <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                        </div>
-                    </div>
-                </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                  <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                      <div class="card-body">
-                          <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Okpa</h5>
-                        </div>
-                      <img src="nigerian food 7.jpg" class="card-img-top" alt="" style="height: 200px;">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                          <ul>
-                            <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                          </ul>
-                        </p>
-                      </div>
-                      <div class="card-body">
-                        <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                      </div>
-                  </div>
-              </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Okpa</h5>
-                      </div>
-                    <img src="nigerian food 8.jpg" class="card-img-top" alt="" style="height: 200px;">
-                    <div class="card-body">
-                      <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                        <ul>
-                          <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                        </ul>
-                      </p>
-                    </div>
-                    <div class="card-body">
-                      <a href="#" class="card-link" style="font-family: snap ITC; display: flex;justify-content: center;">Place Your Order Now</a>
-                    </div>
-                </div>
-              </div>
-              </div> 
-              </div>  
-            </section>
-            <section id="American-Dishes" class="jumbotron bg-dark">
-                <h3 style="text-align: center;">American Dishes</h3>
-                <div class="container">
-                  <div class="row">
-                      <div class="col-md-3" style=" padding-bottom: 2rem;">
-                          <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                              <div class="card-body">
-                                  <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Pizza & Others</h5>
-                                </div>
-                              <img src="American food 1.jpg" class="card-img-top" alt="" style="height: 160px;">
-                              <div class="card-body">
-                                <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                                  <ul>
-                                    <li style="list-style: none;">Price: $12.00 or 9600.00 Naira Respectively</li>
-                                  </ul>
-                                </p>
-                              </div>
-                              <div class="card-body">
-                                <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-3" style=" padding-bottom: 2rem;">
-                        <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                            <div class="card-body">
-                                <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Chicken & Sauce</h5>
-                            </div>
-                            <img src="American food 2.jpg" class="card-img-top" alt="" style="height: 180px;">
-                            <div class="card-body">
-                              <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                                <ul>
-                                  <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                                </ul>
-                              </p>
-                            </div>
-                            <div class="card-body">
-                              <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                            </div>
-                        </div>
-                    </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                      <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                          <div class="card-body">
-                              <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Pancakes</h5>
-                            </div>
-                          <img src="American food 3.jpg" class="card-img-top" alt="" style="height: 180px;">
-                          <div class="card-body">
-                            <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                              <ul>
-                                <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                              </ul>
-                            </p>
-                          </div>
-                          <div class="card-body">
-                            <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                          </div>
-                      </div>
-                  </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                    <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Burger & Others</h5>
-                          </div>
-                        <img src="American food 4.jpg" class="card-img-top" alt="" style="height: 180px;">
-                        <div class="card-body">
-                          <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                            <ul>
-                              <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                            </ul>
-                          </p>
-                        </div>
-                        <div class="card-body">
-                          <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3" style=" padding-bottom: 2rem;">
-                      <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                          <div class="card-body">
-                              <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Meat-pies & side Dishes</h5>
-                            </div>
-                          <img src="American food 5.jpg" class="card-img-top" alt="" style="height: 180px;">
-                          <div class="card-body">
-                            <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                              <ul>
-                                <li style="list-style: none;">Price: $12.00 or 9600.00 Naira</li>
-                              </ul>
-                            </p>
-                          </div>
-                          <div class="card-body">
-                            <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-3" style=" padding-bottom: 2rem;">
-                    <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Sausage</h5>
-                          </div>
-                        <img src="American food 6.jpg" class="card-img-top" alt="" style="height: 200px;">
-                        <div class="card-body">
-                          <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                            <ul>
-                              <li style="list-style: none;">Price: $12.00 or 9600.00 Naira</li>
-                            </ul>
-                          </p>
-                        </div>
-                        <div class="card-body">
-                          <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                        </div>
-                    </div>
-                </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                  <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                      <div class="card-body">
-                          <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Ham-Burger</h5>
-                        </div>
-                      <img src="American food 7.jpg" class="card-img-top" alt="" style="height: 200px;">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                          <ul>
-                            <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                          </ul>
-                        </p>
-                      </div>
-                      <div class="card-body">
-                        <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                      </div>
-                  </div>
-              </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Okpa</h5>
-                      </div>
-                    <img src="American food 8.jpg" class="card-img-top" alt="" style="height: 220px;">
-                    <div class="card-body">
-                      <p class="card-text" style="text-align: center;">Meat-pies<br> 
-                        <ul>
-                          <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                        </ul>
-                      </p>
-                    </div>
-                    <div class="card-body">
-                      <a href="#" class="card-link" style="font-family: snap ITC; display: flex;justify-content: center;">Place Your Order Now</a>
-                    </div>
-                </div>
-              </div>
-              </div> 
-              </div>
-            </section>
-            <section id="Canadian-Dishes" class="jumbotron bg-dark">
-                <h3 style="text-align: center;">Canadian Dishes</h3>
-                <div class="container">
-                  <div class="row">
-                      <div class="col-md-3" style=" padding-bottom: 2rem;">
-                          <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                              <div class="card-body">
-                                  <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Grilles</h5>
-                                </div>
-                              <img src="Canadian food 1.jpg" class="card-img-top" alt="" style="height: 160px;">
-                              <div class="card-body">
-                                <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                                  <ul>
-                                    <li style="list-style: none;">Price: $12.00 or 9600.00 Naira Respectively</li>
-                                  </ul>
-                                </p>
-                              </div>
-                              <div class="card-body">
-                                <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-3" style=" padding-bottom: 2rem;">
-                        <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                            <div class="card-body">
-                                <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Special Grilles</h5>
-                            </div>
-                            <img src="Canadian food 2.jpg" class="card-img-top" alt="" style="height: 180px;">
-                            <div class="card-body">
-                              <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                                <ul>
-                                  <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                                </ul>
-                              </p>
-                            </div>
-                            <div class="card-body">
-                              <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                            </div>
-                        </div>
-                    </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                      <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                          <div class="card-body">
-                              <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Grilles</h5>
-                            </div>
-                          <img src="Canadian food 3.jpg" class="card-img-top" alt="" style="height: 180px;">
-                          <div class="card-body">
-                            <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                              <ul>
-                                <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                              </ul>
-                            </p>
-                          </div>
-                          <div class="card-body">
-                            <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                          </div>
-                      </div>
-                  </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                    <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Grilles</h5>
-                          </div>
-                        <img src="Canadian food 4.jpg" class="card-img-top" alt="" style="height: 180px;">
-                        <div class="card-body">
-                          <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                            <ul>
-                              <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                            </ul>
-                          </p>
-                        </div>
-                        <div class="card-body">
-                          <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3" style=" padding-bottom: 2rem;">
-                      <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                          <div class="card-body">
-                              <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Garnished Pancakes</h5>
-                            </div>
-                          <img src="Canadian food 5.jpg" class="card-img-top" alt="" style="height: 180px;">
-                          <div class="card-body">
-                            <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                              <ul>
-                                <li style="list-style: none;">Price: $12.00 or 9600.00 Naira</li>
-                              </ul>
-                            </p>
-                          </div>
-                          <div class="card-body">
-                            <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-3" style=" padding-bottom: 2rem;">
-                    <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Meat</h5>
-                          </div>
-                        <img src="Canadian food 6.jpg" class="card-img-top" alt="" style="height: 200px;">
-                        <div class="card-body">
-                          <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                            <ul>
-                              <li style="list-style: none;">Price: $12.00 or 9600.00 Naira</li>
-                            </ul>
-                          </p>
-                        </div>
-                        <div class="card-body">
-                          <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                        </div>
-                    </div>
-                </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                  <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                      <div class="card-body">
-                          <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Garnished Cakes</h5>
-                        </div>
-                      <img src="Canadian food 7.jpg" class="card-img-top" alt="" style="height: 200px;">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                          <ul>
-                            <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                          </ul>
-                        </p>
-                      </div>
-                      <div class="card-body">
-                        <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                      </div>
-                  </div>
-              </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Fries</h5>
-                      </div>
-                    <img src="Canadian food 8.jpg" class="card-img-top" alt="" style="height: 200px;">
-                    <div class="card-body">
-                      <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                        <ul>
-                          <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                        </ul>
-                      </p>
-                    </div>
-                    <div class="card-body">
-                      <a href="#" class="card-link" style="font-family: snap ITC; display: flex;justify-content: center;">Place Your Order Now</a>
-                    </div>
-                </div>
-              </div>
-              </div> 
-              </div>
-            </section>
-            <section id="Other-Delicacies">
-              <h3 style="text-align: center;">Other Delicacies</h3>
-              <div class="container">
-                <div class="row">
-                    <div class="col-md-3" style=" padding-bottom: 2rem;">
-                        <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                            <div class="card-body">
-                                <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Indian Dishes</h5>
-                              </div>
-                            <img src="other delicacies (indian).jpg" class="card-img-top" alt="" style="height: 160px;">
-                            <div class="card-body">
-                              <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                                <ul>
-                                  <li style="list-style: none;">Price: $12.00 or 9600.00 Naira Respectively</li>
-                                </ul>
-                              </p>
-                            </div>
-                            <div class="card-body">
-                              <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3" style=" padding-bottom: 2rem;">
-                      <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                          <div class="card-body">
-                              <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Kenyan Dishes</h5>
-                          </div>
-                          <img src="other delicacies (kenyan).jpg" class="card-img-top" alt="" style="height: 180px;">
-                          <div class="card-body">
-                            <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                              <ul>
-                                <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                              </ul>
-                            </p>
-                          </div>
-                          <div class="card-body">
-                            <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                          </div>
-                      </div>
-                  </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                    <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Spain's Dishes</h5>
-                          </div>
-                        <img src="other delicacies (Spain's).jpg" class="card-img-top" alt="" style="height: 180px;">
-                        <div class="card-body">
-                          <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                            <ul>
-                              <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                            </ul>
-                          </p>
-                        </div>
-                        <div class="card-body">
-                          <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                        </div>
-                    </div>
-                </div><div class="col-md-3" style=" padding-bottom: 2rem;">
-                  <div class="card" style=" background-color: rgb(61, 61, 61); border-radius: 10px;">
-                      <div class="card-body">
-                          <h5 class="card-title" style="text-align: center; font-family: snap ITC; color: rgb(218, 204, 204);">Mexican Dishes</h5>
-                        </div>
-                      <img src="other delicacies(mexican).jpg" class="card-img-top" alt="" style="height: 183px;">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">Buy Your Food and Enjoy it.<br> 
-                          <ul>
-                            <li style="list-style: none;">Price: $10.00 or 8000.00 Naira</li>
-                          </ul>
-                        </p>
-                      </div>
-                      <div class="card-body">
-                        <a href="#" class="card-link" style="font-family: snap ITC;display: flex;justify-content: center;">Place Your Order Now</a>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
+      /* Layout */
+      .container{max-width:1100px; margin:0 auto; padding: 0 16px}
+      header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(12px); background:rgba(11,15,20,.7); border-bottom:1px solid rgba(255,255,255,.06)}
+      .nav{display:flex; align-items:center; justify-content:space-between; padding:12px 0}
+      .brand{display:flex; gap:10px; align-items:center}
+      .logo{display:grid; place-items:center; width:40px; height:40px; border-radius:12px; background:linear-gradient(135deg,#0ea5e9,#22c55e)}
+      .brand h1{font-size:18px; letter-spacing:.3px; margin:0}
+      .menu a{padding:10px 12px; border-radius:999px; font-size:14px; color:var(--muted)}
+      .menu a:hover{color:var(--text); background:rgba(255,255,255,.06)}
+
+      /* Hero */
+      .hero{padding: 32px 0 18px}
+      .hero-card{display:grid; grid-template-columns: 1.2fr 1fr; gap: 18px; background: linear-gradient(180deg,#111827,#0f172a); padding: 18px; border-radius: var(--radius); box-shadow: var(--shadow); border:1px solid rgba(255,255,255,.06)}
+      .hero h2{margin:0 0 6px; font-size: clamp(24px, 3.6vw, 40px)}
+      .hero p{margin:0 0 12px; color:var(--muted)}
+      .pills{display:flex; flex-wrap:wrap; gap:8px}
+      .pill{font-size:12px; padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,.12); color:var(--muted)}
+
+      /* Controls */
+      .controls{display:flex; flex-wrap:wrap; gap:10px; align-items:center}
+      .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background:#0f1622; color:var(--text); cursor:pointer}
+      .btn[aria-pressed="true"], .btn.primary{background:var(--brand); border-color:transparent}
+      .btn:hover{filter:brightness(1.1)}
+      .rate{font-variant-numeric: tabular-nums; color:var(--muted); font-size:13px}
+
+      /* Sections */
+      section{padding: 28px 0}
+      section h3{font-size: 22px; margin: 0 0 14px}
+      .grid{display:grid; gap: 16px; grid-template-columns: repeat(3, minmax(0,1fr))}
+      @media (max-width: 900px){ .hero-card{grid-template-columns: 1fr} .grid{grid-template-columns: repeat(2, minmax(0,1fr))} }
+      @media (max-width: 560px){ .grid{grid-template-columns: 1fr} .menu{display:none} }
+
+      .card{border:1px solid rgba(255,255,255,.08); background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02)); border-radius: var(--radius); padding: 12px; box-shadow: var(--shadow); display:flex; flex-direction:column}
+      .card h4{margin:10px 0 2px}
+      .card p{margin:0 0 8px; color:var(--muted)}
+      .price{margin-top:auto; display:flex; align-items:center; justify-content:space-between; font-weight:600}
+      .price small{color:var(--muted); font-weight:500}
+      .order{margin-top:10px}
+
+      .cta{display:flex; gap:10px}
+      .cta a, .cta button{flex:1}
+
+      /* Footer */
+      footer{margin-top: 28px; border-top:1px solid rgba(255,255,255,.08)}
+      .foot{display:grid; gap:18px; grid-template-columns: 1.3fr 1fr}
+      @media (max-width:900px){ .foot{grid-template-columns: 1fr} }
+      .contact{display:grid; gap:10px}
+      .contact a{color:var(--text)}
+      .credits{color:var(--muted); font-size:13px}
+
+      /* A11y helpers */
+      .skip-link{position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden}
+      .skip-link:focus{left:16px; top:16px; width:auto; height:auto; background:#000; color:#fff; padding:10px; border-radius:999px}
+    </style>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+      <div class="container nav" role="navigation" aria-label="Main">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">🍽️</div>
+          <h1>Eat &amp; Chill</h1>
+        </div>
+        <nav class="menu">
+          <a href="#nigerian">Nigerian</a>
+          <a href="#american">American</a>
+          <a href="#canadian">Canadian</a>
+          <a href="#others">Other delicacies</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-card">
+          <div>
+            <h2 id="heroTitle">Fresh, tasty dishes from Nigeria and beyond</h2>
+            <p>Explore our menu and view prices in <strong>USD</strong> or <strong>NGN</strong>. Call to place your order.</p>
+            <div class="pills" aria-label="Popular items">
+              <span class="pill">Jollof Rice</span>
+              <span class="pill">Burger</span>
+              <span class="pill">Fries</span>
+              <span class="pill">Okpa</span>
+              <span class="pill">Pepper Soup</span>
             </div>
-            </section>
-            <section id="contact" class="jumbotron bg-dark">
-              <div>
-                <h3 style="text-align: center; padding-bottom: 2rem;">This is my Location</h3>
-                <div class="container">
-                  <div class="row asw">
-                      <div class="col-md-8 af">
-                          <div class="aq" style="text-align: center;">
-                              <h1><i class="bi bi-geo-alt-fill amm"></i></h2>
-                          </div>    
-                          <p style="text-align: center;">My Address: I live at NO.24 mbuke road.</p></h1>
-                          <h2 style="text-align: center;"><i class="bi bi-telephone-fill amm"></i></h2>
-                          <p class="am" style="text-align: center;">07013983338</p>
-                          <h2 style="text-align: center;"><a href="" class="fs" style="padding-right: 1rem;"><i class="bi bi-facebook ac"></i></a><a href="" class="fs" style="padding-right: 1rem; color: blueviolet;"><i class="bi bi-twitter acc"></i></a><a href="" class="fs" style="padding-right: 1rem; color: violet;"><i class="bi bi-instagram accc"></i></a><a href="" class="fs" style="padding-right: 1rem; color: lightgreen;"><i class="bi bi-whatsapp acccc"></i></a><a href="" class="fs"><i class="bi bi-houses" style=" color: white;"></i></a></h2>
-  
-                      </div>
-                      <div class="col-md-4 bg-dark ">
-                          <h3>Send Message</h3>
-  
-                          <form action="">
-                              <div class="button2" style="text-align: center;">    
-                                  <label for="fname"></label><br><input type="text" name="fname" placeholder="Name" required style="border-radius: 10px; padding-bottom: 1rem; margin-bottom: 1rem; font-family: snap ITC;"><br></form>
-                                  <label for="1name"></label><br>
-                                  <input type="email"  name="1name" placeholder="E-mail" required style="border-radius: 10px; padding-bottom: 1rem; margin-bottom: 1rem; font-family: snap ITC;"><br><br>
-                                  <label for="1name"></label><br>
-                                  <textarea cols="30" rows="10" placeholder="Message" style="border-radius: 20px; font-family: snap ITC;"></textarea><br><br>
-                                  <div class="button1">
-                                      <button class="sendbutton" type="submit" style="background-color: gray; border-radius: 10px; padding: 0.5rem 1rem;"><a href="submit.html" style="text-decoration: none; background-color: gray; color: white;" >Send</a></button>
-                                  </div>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-              </div>
-            </section>
-        </main>
-        <footer>
-          <hr>
-            <article style="font-family: snap ITC; color: rgb(218, 204, 204); text-align: center;">Designed by Eat And Chill Flex Design</article>
-           <hr> 
-        </footer>
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+            <div class="controls" style="margin-top:12px">
+              <button class="btn primary" id="usdBtn" aria-pressed="true">Show USD</button>
+              <button class="btn" id="ngnBtn" aria-pressed="false">Show NGN</button>
+              <span class="rate" id="rateNote" title="Edit the rate in the script at the bottom">Using 1 USD ≈ <span id="rateVal">800</span> NGN (static)</span>
+            </div>
+          </div>
+          <img src="American food 1.jpg" alt="Assorted dishes on a table" loading="eager" />
+        </div>
+      </section>
+
+      <!-- NIGERIAN -->
+      <section id="nigerian" aria-labelledby="nigTitle">
+        <h3 id="nigTitle">Nigerian Dishes</h3>
+        <div class="grid">
+          <article class="card">
+            <img src="nigerian food 1.jpg" alt="Jollof rice with chicken" />
+            <h4>Jollof Rice</h4>
+            <p>These are examples — scroll to see more.</p>
+            <div class="price"><span class="money" data-usd="12"></span> <small>per plate</small></div>
+            <div class="order cta">
+              <a class="btn" href="#contact">Place Order</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="nigerian food 2.jpg" alt="Vegetable soup with eba" />
+            <h4>Vegetable Soup with Eba</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="nigerian food 3.jpg" alt="Vegetable soup with pounded yam" />
+            <h4>Vegetable Soup with Pounded Yam</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="nigerian food 4.jpg" alt="Okra soup" />
+            <h4>Okra Soup</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="nigerian food 5.jpg" alt="Garnished spaghetti" />
+            <h4>Garnished Spaghetti</h4>
+            <div class="price"><span class="money" data-usd="12"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="nigerian food 6.jpg" alt="Pepper soup" />
+            <h4>Pepper Soup</h4>
+            <div class="price"><span class="money" data-usd="12"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="nigerian food 7.jpg" alt="Okpa" />
+            <h4>Okpa</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per wrap</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- AMERICAN -->
+      <section id="american" aria-labelledby="amTitle">
+        <h3 id="amTitle">American Dishes</h3>
+        <div class="grid">
+          <article class="card">
+            <img src="American food 2.jpg" alt="Pizza" />
+            <h4>Pizza & More</h4>
+            <div class="price"><span class="money" data-usd="12"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="American food 3.jpg" alt="Chicken with sauce" />
+            <h4>Chicken & Sauce</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="American food 4.jpg" alt="Pancakes" />
+            <h4>Pancakes</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="American food 5.jpg" alt="Burger" />
+            <h4>Burger & More</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="American food 6.jpg" alt="Meat pies with sides" />
+            <h4>Meat Pies & Sides</h4>
+            <div class="price"><span class="money" data-usd="12"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="American food 7.jpg" alt="Sausage" />
+            <h4>Sausage</h4>
+            <div class="price"><span class="money" data-usd="12"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CANADIAN -->
+      <section id="canadian" aria-labelledby="caTitle">
+        <h3 id="caTitle">Canadian Dishes</h3>
+        <div class="grid">
+          <article class="card">
+            <img src="Canadian food 1.jpg" alt="Grills" />
+            <h4>Grills</h4>
+            <div class="price"><span class="money" data-usd="12"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="Canadian food 2.jpg" alt="Special grills" />
+            <h4>Special Grills</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="Canadian food 3.jpg" alt="Garnished pancakes" />
+            <h4>Garnished Pancakes</h4>
+            <div class="price"><span class="money" data-usd="12"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="Canadian food 4.jpg" alt="Fries" />
+            <h4>Fries</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="Canadian food 5.jpg" alt="Meat" />
+            <h4>Meat</h4>
+            <div class="price"><span class="money" data-usd="12"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="Canadian food 6.jpg" alt="Garnished cakes" />
+            <h4>Garnished Cakes</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per slice</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- OTHERS -->
+      <section id="others" aria-labelledby="othersTitle">
+        <h3 id="othersTitle">Other Delicacies</h3>
+        <div class="grid">
+          <article class="card">
+            <img src="other delicacies (indian).jpg" alt="Indian dishes" />
+            <h4>Indian Dishes</h4>
+            <div class="price"><span class="money" data-usd="12"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="other delicacies (kenyan).jpg" alt="Kenyan dishes" />
+            <h4>Kenyan Dishes</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="other delicacies (Spain's).jpg" alt="Spanish dishes" />
+            <h4>Spanish Dishes</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+
+          <article class="card">
+            <img src="other delicacies(mexican).jpg" alt="Mexican dishes" />
+            <h4>Mexican Dishes</h4>
+            <div class="price"><span class="money" data-usd="10"></span><small>per plate</small></div>
+            <div class="order cta"><a class="btn" href="#contact">Place Order</a></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" aria-labelledby="contactTitle">
+        <h3 id="contactTitle">Contact</h3>
+        <div class="foot">
+          <div class="contact">
+            <p><strong>Phone:</strong> <a id="phoneLink" href="tel:+2347013983338">+234 701 398 3338</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/2347013983338" target="_blank" rel="noopener">Chat with us</a></p>
+            <p><strong>Address:</strong> <span id="addr">Mbuke Road, Nigeria</span></p>
+            <div class="cta">
+              <a class="btn" href="mailto:orders@eatandchill.example?subject=Food%20Order">Send Email</a>
+              <a class="btn" href="#nigerian">Back to top</a>
+            </div>
+            <p class="credits">Designed by Eat & Chill • © <span id="year"></span></p>
+          </div>
+          <form class="card" aria-label="Send message via email" onsubmit="return sendMailto(this)">
+            <h4>Send a quick message</h4>
+            <label>
+              <span class="sr">Your name</span>
+              <input name="name" required placeholder="Your name" style="width:100%; padding:10px; border-radius:10px; border:1px solid rgba(255,255,255,.15); background:#0c121b; color:var(--text)" />
+            </label>
+            <label style="margin-top:8px">
+              <span class="sr">Your message</span>
+              <textarea name="message" required rows="4" placeholder="Your message" style="width:100%; padding:10px; border-radius:10px; border:1px solid rgba(255,255,255,.15); background:#0c121b; color:var(--text)"></textarea>
+            </label>
+            <button class="btn primary" type="submit" style="margin-top:10px">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // ===== Currency toggle (static rate you can change) =====
+      const RATE_NGN_PER_USD = 800; // TODO: update as needed or fetch from an API server-side
+      const moneyEls = Array.from(document.querySelectorAll('.money'));
+      const usdBtn = document.getElementById('usdBtn');
+      const ngnBtn = document.getElementById('ngnBtn');
+      const rateVal = document.getElementById('rateVal');
+      rateVal.textContent = RATE_NGN_PER_USD.toLocaleString();
+
+      function renderCurrency(useNGN){
+        moneyEls.forEach(el=>{
+          const usd = Number(el.dataset.usd);
+          const ngn = Math.round(usd * RATE_NGN_PER_USD);
+          el.textContent = useNGN
+            ? `₦${ngn.toLocaleString('en-NG')}`
+            : `$${usd.toFixed(2)}`;
+        });
+        usdBtn.setAttribute('aria-pressed', String(!useNGN));
+        ngnBtn.setAttribute('aria-pressed', String(useNGN));
+        usdBtn.classList.toggle('primary', !useNGN);
+        ngnBtn.classList.toggle('primary', useNGN);
+      }
+      usdBtn.addEventListener('click', ()=>renderCurrency(false));
+      ngnBtn.addEventListener('click', ()=>renderCurrency(true));
+      renderCurrency(false);
+
+      // ===== Contact helpers =====
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      function sendMailto(form){
+        const name = encodeURIComponent(form.name.value.trim());
+        const msg = encodeURIComponent(form.message.value.trim());
+        const subject = encodeURIComponent(`Message from ${name}`);
+        const body = encodeURIComponent(msg);
+        window.location.href = `mailto:orders@eatandchill.example?subject=${subject}&body=${body}`;
+        return false; // prevent actual submit
+      }
+    </script>
+  </body>
 </html>
